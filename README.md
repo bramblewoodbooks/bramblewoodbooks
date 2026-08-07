@@ -1,20 +1,40 @@
-# Bramblewood Books website
+# Bramblewood Books — Website Version 2
 
-Official website for Bramblewood Books.
+This is the second, more polished version of the Bramblewood Books website.
 
-## GitHub Pages setup
+## Upload to GitHub
+Upload every file in this folder directly to the root of your `bramblewoodbooks` repository:
 
-1. Upload `index.html`, `styles.css`, the `assets` folder, and `CNAME` to the root of the `bramblewoodbooks` repository.
-2. In GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select `main` and `/ (root)`, then click **Save**.
-5. Wait a few minutes for GitHub to publish the site.
-6. In **Settings → Pages**, enter the custom domain `bramblewoodbooks.com` if it is not detected automatically.
-7. In Squarespace Domains, update DNS to point the domain to GitHub Pages. We will do that step together once the site is live on GitHub.
+- index.html
+- styles.css
+- CNAME
+- finn-cover.png
+- bramblewood-map.png
+- friends.png
+- olive.png
+- activities.png
 
-## Before public launch
+Because the image files are now referenced from the repository root, you do NOT need an assets folder.
 
-- Replace the temporary Amazon button with the live Amazon listing URL.
-- Confirm the contact email address.
-- Add social-media links when available.
-- Add downloadable activities later.
+If GitHub asks whether to replace existing files, replace `index.html`, `styles.css`, `README.md`, and `CNAME`.
+
+## GitHub Pages
+Repository → Settings → Pages
+
+- Source: Deploy from a branch
+- Branch: main
+- Folder: /(root)
+
+## Custom domain
+The CNAME file is already set to:
+
+bramblewoodbooks.com
+
+Once the site is published on GitHub, point the Squarespace DNS records to GitHub Pages.
+
+## Still to add before launch
+- Live Amazon purchase link for Finn
+- Dedicated Bramblewood contact email if wanted
+- Social-media links
+- Downloadable activities
+- Final author biography/photo if wanted
