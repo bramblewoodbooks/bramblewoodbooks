@@ -1,40 +1,19 @@
-# Bramblewood Books — Website Version 2
+# Bramblewood Books Website V3
 
-This is the second, more polished version of the Bramblewood Books website.
+Upload all files in this folder to the root of the GitHub repository, replacing the previous site files.
 
-## Upload to GitHub
-Upload every file in this folder directly to the root of your `bramblewoodbooks` repository:
+Important:
+- Activities have been removed.
+- The site is now multi-page.
+- About Bethany has been updated and includes West Sussex.
+- Contact form sends to bethany-simon@outlook.com using FormSubmit.
+- The email address is not visibly displayed on the page, though FormSubmit's destination appears in the HTML source.
+- The newsletter checkbox records interest in the contact email; it is not yet a true mailing-list subscription.
 
-- index.html
-- styles.css
-- CNAME
-- finn-cover.png
-- bramblewood-map.png
-- friends.png
-- olive.png
-- activities.png
+## First FormSubmit message
+The first time the form is used, FormSubmit may send an activation/confirmation email to bethany-simon@outlook.com. Confirm it once so future messages can be delivered.
 
-Because the image files are now referenced from the repository root, you do NOT need an assets folder.
-
-If GitHub asks whether to replace existing files, replace `index.html`, `styles.css`, `README.md`, and `CNAME`.
-
-## GitHub Pages
-Repository → Settings → Pages
-
-- Source: Deploy from a branch
-- Branch: main
-- Folder: /(root)
-
-## Custom domain
-The CNAME file is already set to:
-
-bramblewoodbooks.com
-
-Once the site is published on GitHub, point the Squarespace DNS records to GitHub Pages.
-
-## Still to add before launch
-- Live Amazon purchase link for Finn
-- Dedicated Bramblewood contact email if wanted
-- Social-media links
-- Downloadable activities
-- Final author biography/photo if wanted
+## Replace these when ready
+- Amazon purchase link for Finn
+- Author photo
+- Mailing-list provider integration if you want automated newsletters
