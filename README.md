@@ -20,3 +20,6 @@ Reviewed the six main live pages in the browser and compared them with the lates
 Amazon purchase URL remains pending. The form retains its original FormSubmit destination and thank-you URL; no message was sent. The updates checkbox records interest only. Confirm FormSubmit activation and live delivery separately after upload.
 
 No live repository or website was changed by this work.
+
+## Consolidated updates after the concise edition
+Includes the revised woodland welcome paragraph, smaller homepage image using woodland-adventure.png, the map invitation “Where shall we wander today?”, and portraits of Finn, Harry and Pip from friends-at-moss-bridge.png with Olive from friends.png. This complete package includes all dependencies; upload its extracted contents to the repository root. The concise Bethany biography is retained; restoration of the original biography was discussed but not requested.

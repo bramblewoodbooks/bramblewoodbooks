@@ -7,6 +7,16 @@
 <link rel="stylesheet" href="styles.css?v=concise-1">
 <meta name="description" content="Meet Finn, Harry, Pip and Olive from The Bramblewood Series.">
 <title>Meet the Friends | Bramblewood Books</title>
+<style>
+.friend-portrait{position:relative;width:160px;max-width:100%;aspect-ratio:1;overflow:hidden;border-radius:50%;margin:0 0 1.2rem;background:#f5eddb}
+.friend-portrait img{position:absolute;width:400%;max-width:none;height:auto}
+.friend-portrait.finn img{width:500%;left:-365%;top:-73%}
+.friend-portrait.olive img{left:-284%;top:0}
+
+.friend-portrait.harry img{width:600%;left:-315%;top:-115%}
+.friend-portrait.pip img{width:450%;left:-272%;top:-52%}
+@media(min-width:650px){.friend-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.friend-card{display:grid;grid-template-columns:130px minmax(0,1fr);column-gap:1.25rem;align-content:start}.friend-portrait{grid-row:1/4;width:130px}.friend-card>.kicker{grid-column:2}.friend-card>h2,.friend-card>p:not(.kicker){grid-column:2}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -35,10 +45,10 @@
 <section class="section">
   <figure class="wide-art"><img src="friends.png" width="1774" height="887" decoding="async" loading="lazy" alt="An illustrated spread from Finn’s story: Olive listens kindly to Finn beside the Silver Stream"><figcaption>A moment with Finn and Olive, from Book One. <a href="friends.png">Open the full spread</a></figcaption></figure>
   <div class="friend-grid">
-    <article class="friend-card light-card"><p class="kicker">THE FOX</p><h2>Finn</h2><p>Curious, thoughtful and learning that courage can begin with one small step.</p></article>
-    <article class="friend-card light-card"><p class="kicker">THE HEDGEHOG</p><h2>Harry</h2><p>Loyal, gentle and much braver than he sometimes believes himself to be.</p></article>
-    <article class="friend-card light-card"><p class="kicker">THE RABBIT</p><h2>Pip</h2><p>Bright, energetic and always ready to turn the next bend in the path.</p></article>
-    <article class="friend-card light-card"><p class="kicker">THE OWL</p><h2>Olive</h2><p>Wise and kind, with a quiet way of helping her friends notice what matters.</p></article>
+    <article class="friend-card light-card"><div class="friend-portrait finn"><img src="friends-at-moss-bridge.png" width="1774" height="887" loading="lazy" alt="Finn in the final Bramblewood book artwork"></div><p class="kicker">THE FOX</p><h2>Finn</h2><p>Curious, thoughtful and learning that courage can begin with one small step.</p></article>
+    <article class="friend-card light-card"><div class="friend-portrait harry"><img src="friends-at-moss-bridge.png" width="1774" height="887" loading="lazy" alt="Harry in the final Bramblewood book artwork"></div><p class="kicker">THE HEDGEHOG</p><h2>Harry</h2><p>Loyal, gentle and much braver than he sometimes believes himself to be.</p></article>
+    <article class="friend-card light-card"><div class="friend-portrait pip"><img src="friends-at-moss-bridge.png" width="1774" height="887" loading="lazy" alt="Pip in the final Bramblewood book artwork"></div><p class="kicker">THE RABBIT</p><h2>Pip</h2><p>Bright, energetic and always ready to turn the next bend in the path.</p></article>
+    <article class="friend-card light-card"><div class="friend-portrait olive"><img src="friends.png" width="1774" height="887" loading="lazy" alt="Olive in the final Bramblewood book artwork"></div><p class="kicker">THE OWL</p><h2>Olive</h2><p>Wise and kind, with a quiet way of helping her friends notice what matters.</p></article>
   </div>
 
 </section>
