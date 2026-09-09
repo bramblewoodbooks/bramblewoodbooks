@@ -10,3 +10,20 @@
 @media(min-width:900px){.hero{grid-template-columns:1fr 1fr;padding-block:4.5rem;gap:4rem}.split{grid-template-columns:1fr 1fr;gap:5rem}.feature-card{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:4rem}.about-page{grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);gap:4rem}.contact-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:4rem}.friend-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.heart-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.map-frame{padding:1rem}.world-copy{max-width:900px}.world-copy h2{max-width:650px}}
 @media(min-width:1180px){.site-header{flex-wrap:nowrap;gap:1rem}.menu-toggle{display:none!important}.nav,.nav[data-enhanced]:not(.is-open){display:flex;width:auto;gap:.15rem}.nav a{white-space:nowrap;padding:.6rem}.hero,.section,.page-hero{padding-inline:max(var(--gutter),calc((100vw - 1280px)/2))}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Supplied Bramblewood oak-tree identity. Preserve the complete artwork. */
+.brand-logo{width:52px;height:52px;object-fit:contain;flex:0 0 auto;border-radius:50%}
+.home-page .home-brand-art{width:230px;max-width:70%;height:auto;margin:0 auto 1.5rem;border-radius:4px}
+@media(min-width:650px){.brand-logo{width:68px;height:68px}.home-page .home-brand-art{width:280px}}
+@media(min-width:1180px){.site-header{gap:.5rem}.brand{gap:.5rem}.brand strong{font-size:1.25rem}.nav a{padding-inline:.45rem}}
+
+/* Editorial refinements: concise page introductions and consistent spacing. */
+.page-hero{padding-block:clamp(2.5rem,5vw,4rem)}
+.page-hero h1{font-size:clamp(2.5rem,4.5vw,4.2rem)}
+.author-emblem{margin:0;max-width:380px;align-self:center;justify-self:center}
+.author-emblem img{width:100%;height:auto;border-radius:4px}
+.contact-grid{display:block;max-width:780px}
+.friend-card>.kicker{margin-bottom:.8rem}
+.footer-right a{display:inline-flex;align-items:center;min-height:44px}
+.home-page .home-book{padding-block:3rem}
+@media(min-width:900px){.about-page{align-items:center}}

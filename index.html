@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#234c37">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=concise-1">
 <meta name="description" content="Bramblewood Books — the home of The Bramblewood Series by Bethany Simon.">
 <title>Bramblewood Books | Stories that help little hearts grow</title>
 <style>
@@ -45,13 +45,17 @@
 .home-page .home-author>a{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;font-size:.9rem}
 @media(min-width:650px){.home-page .woodland-paths{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;padding-block:1.5rem}.home-page .woodland-paths a{border:0;padding:.5rem 0}.home-page .woodland-paths strong{font-size:1.15rem}.home-page .woodland-welcome{grid-template-columns:1.05fr 1fr}.home-page .welcome-illustration{aspect-ratio:auto;min-height:490px}.home-page .welcome-copy{padding-block:3rem}.home-page h1{font-size:clamp(2.7rem,4.5vw,4.5rem)}.home-page .home-book{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);padding-block:4.5rem}.home-page .home-book-cover{width:95%}}
 @media(min-width:1000px){.home-page .welcome-copy{padding-left:max(var(--gutter),calc((100vw - 1280px)/2));padding-right:3rem}.home-page .welcome-illustration{min-height:540px}.home-page .woodland-paths{padding-inline:max(var(--gutter),calc((100vw - 1280px)/2));gap:3rem}.home-page .woodland-paths strong{font-size:1.4rem}.home-page .home-world{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:4rem;padding-block:4rem;padding-inline:max(var(--gutter),calc((100vw - 1280px)/2))}.home-page .home-book{gap:5rem}}
+
+/* Give the welcome illustration breathing room at every screen size. */
+.home-page .welcome-illustration{width:calc(100% - 2 * var(--gutter));max-width:470px;min-height:0;aspect-ratio:1/1;align-self:center;justify-self:center;margin:0 0 2rem;border-radius:4px}
+@media(min-width:650px){.home-page .welcome-illustration{width:85%;min-height:0;aspect-ratio:1/1;margin:2rem 0}}
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="index.html" aria-current="page">
-    <span class="brand-mark">❦</span>
+    <img class="brand-logo" src="bramblewood-logo.jpg" width="1080" height="1080" alt="" decoding="async">
     <span><strong>Bramblewood Books</strong><small>The Bramblewood Series</small></span>
   </a>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
@@ -70,40 +74,35 @@
     <p class="kicker">THE BRAMBLEWOOD SERIES · BY BETHANY SIMON</p>
     <h1 id="welcome-title">Welcome to<br><em>Bramblewood.</em></h1>
     <p class="welcome-tagline">Stories that help little hearts grow.</p>
-    <p>A little woodland. A world of wonder. Come and meet Finn and his friends, where gentle adventures help little hearts discover courage, kindness and the magic of being themselves.</p>
-    <a class="btn btn-primary" href="explore.html">Step into Bramblewood <span aria-hidden="true">→</span></a>
-    <p class="welcome-byline">Woodland stories to share, treasure and return to.</p>
+    <p>Meet Finn and his friends in Bethany Simon’s illustrated woodland stories, made for sharing with little readers.</p>
+    <a class="btn btn-primary" href="books.html">Discover the books <span aria-hidden="true">→</span></a>
+
   </div>
   <div class="welcome-illustration"><img src="friends.png" width="1774" height="887" fetchpriority="high" decoding="async" alt="Finn and Olive beside a sparkling stream, surrounded by flowers, lantern light and a moonlit woodland."></div>
 </section>
-<nav class="woodland-paths" aria-label="Discover Bramblewood">
-  <a href="books.html"><span class="kicker">A STORY TO SHARE</span><strong>Discover the books <span aria-hidden="true">↗</span></strong><span>Start an adventure with Finn.</span></a>
-  <a href="friends.html"><span class="kicker">FRIENDS TO TREASURE</span><strong>Meet the woodland friends <span aria-hidden="true">↗</span></strong><span>Say hello to Finn, Harry, Pip and Olive.</span></a>
-  <a href="explore.html"><span class="kicker">A WORLD TO EXPLORE</span><strong>Follow a woodland path <span aria-hidden="true">↗</span></strong><span>Find your way around Bramblewood.</span></a>
-</nav>
+
 <section class="home-book" aria-labelledby="finn-title">
   <a class="home-book-cover" href="books.html"><img src="finn-cover.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Discover Finn the Fox Who Was Afraid of the Dark, by Bethany Simon."></a>
-  <div class="home-book-copy"><p class="kicker">OUR FIRST WOODLAND ADVENTURE</p><h2 id="finn-title">A little fox.<br>A brave little beginning.</h2><p class="book-name">Finn the Fox Who Was Afraid of the Dark</p><p>Finn loves Bramblewood. But when evening arrives, the woodland feels different. With his friends beside him, he begins to discover that the dark holds beautiful things too.</p><p>A gentle story about friendship, courage and learning to see the night a little differently.</p><a class="btn btn-primary" href="books.html">Discover Finn’s story <span aria-hidden="true">→</span></a></div>
+  <div class="home-book-copy"><p class="kicker">OUR FIRST WOODLAND ADVENTURE</p><h2 id="finn-title">A little fox.<br>A brave little beginning.</h2><p class="book-name">Finn the Fox Who Was Afraid of the Dark</p><p>When the sun goes down, Finn’s familiar woodland feels different. A little help from his friends might be just what he needs.</p><a class="btn btn-primary" href="books.html">Discover Finn’s story <span aria-hidden="true">→</span></a></div>
 </section>
-<section class="home-world" aria-labelledby="world-title">
-  <div class="home-world-copy"><p class="kicker">BEYOND THE PAGES</p><h2 id="world-title">Every path leads<br>somewhere wonderful.</h2><p>From the Great Oak to the Silver Stream, there’s a whole woodland waiting to be discovered. Where will you wander first?</p><a class="btn btn-ghost" href="explore.html">Explore the Bramblewood map <span aria-hidden="true">→</span></a></div>
-  <a class="home-map-link" href="explore.html"><img src="bramblewood-map.png" width="1774" height="887" loading="lazy" decoding="async" alt="Preview of the illustrated Bramblewood map. Open the map to explore its places and read the labels."><span>Open the map and look a little closer <span aria-hidden="true">↗</span></span></a>
-</section>
-<section class="home-author"><span class="home-flourish" aria-hidden="true">❦</span><p class="kicker">THE HEART BEHIND THE STORIES</p><h2>Meet Bethany</h2><p>“Bramblewood began with a simple idea: to create gentle woodland stories that help children explore big feelings through kindness, curiosity and friendship.”</p><a href="about.html">A little more about Bethany <span aria-hidden="true">→</span></a></section>
+
+<nav class="woodland-paths" aria-label="More to discover">
+<a href="friends.html"><span class="kicker">MEET</span><strong>The woodland friends <span aria-hidden="true">↗</span></strong><span>Four personalities. One lasting friendship.</span></a>
+<a href="explore.html"><span class="kicker">WANDER</span><strong>Explore the map <span aria-hidden="true">↗</span></strong><span>Follow the stream and see where it leads.</span></a>
+<a href="about.html"><span class="kicker">DISCOVER</span><strong>The author, Bethany <span aria-hidden="true">↗</span></strong><span>Meet the writer behind Bramblewood.</span></a>
+</nav>
 <div class="welcome-strip"><p>Look closely.</p><span>✦</span><p>Wonder kindly.</p><span>✦</span><p>Find your light.</p></div>
 </main>
 <footer>
   <div>
     <strong>Bramblewood Books</strong>
-    <p>Stories that help little hearts grow.</p>
+    <p>Illustrated woodland stories by Bethany Simon.</p>
   </div>
   <div class="footer-right">
-    <span>The Bramblewood Series</span>
-    <span>bramblewoodbooks.com</span>
+    <a href="contact.html">Contact Bethany</a>
     <span>© 2026 Bethany Simon</span>
-    <span class="hidden-mouse" title="You found the hidden mouse!">🐭</span>
   </div>
 </footer>
-<script src="script.js"></script>
+<script src="script.js?v=concise-1"></script>
 </body>
 </html>
