@@ -29,7 +29,7 @@
 .home-page .woodland-paths a>span:last-child{display:block;font-size:.85rem;color:var(--brown);margin-top:.5rem}
 .home-page .woodland-paths a:hover strong{text-decoration:underline;text-underline-offset:.2em}
 .home-page .home-book{display:grid;gap:2.5rem;padding:3.5rem var(--gutter);max-width:1260px;margin:auto;align-items:center}
-.home-page .home-book-cover{display:block;max-width:370px;width:85%;justify-self:center;box-shadow:0 15px 35px #30382725;transform:rotate(-2deg);border:5px solid #fffaf0}
+.home-page .home-book-cover{display:block;max-width:370px;width:85%;justify-self:center;box-shadow:0 15px 35px #30382725;transform:none;aspect-ratio:1/1;border:5px solid #fffaf0}
 .home-page h2{font-size:clamp(2rem,3.2vw,3.1rem)}
 .home-page .book-name{font-style:italic;font-size:1.2rem;color:#53603a;line-height:1.5}
 .home-page .home-book-copy>p:not(.kicker){max-width:49ch}
@@ -49,6 +49,8 @@
 /* Give the welcome illustration breathing room at every screen size. */
 .home-page .welcome-illustration{width:calc(100% - 2 * var(--gutter));max-width:470px;min-height:0;aspect-ratio:1/1;align-self:center;justify-self:center;margin:0 0 2rem;border-radius:4px}
 @media(min-width:650px){.home-page .welcome-illustration{width:85%;min-height:0;aspect-ratio:1/1;margin:2rem 0}}
+
+.home-page .home-book-cover img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}
 </style>
 </head>
 <body>
