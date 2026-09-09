@@ -7,6 +7,45 @@
 <link rel="stylesheet" href="styles.css">
 <meta name="description" content="Bramblewood Books — the home of The Bramblewood Series by Bethany Simon.">
 <title>Bramblewood Books | Stories that help little hearts grow</title>
+<style>
+/* Homepage-only design: kept here so this update requires just index.html. */
+.home-page .woodland-welcome{display:grid;background:#f5eddb;isolation:isolate}
+.home-page .welcome-copy{padding:2.75rem var(--gutter) 2rem;align-self:center;min-width:0}
+.home-page .welcome-copy .kicker{font-size:.65rem;line-height:1.7;max-width:35ch}
+.home-page h1{font-size:clamp(2.8rem,4.5vw,4.5rem);letter-spacing:-.045em;line-height:1.08;margin:1rem 0 1.25rem}
+.home-page h1 em{font-weight:400;color:#53603a}
+.home-page .welcome-tagline{font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.4;color:#465136}
+.home-page .welcome-copy>p:not(.kicker):not(.welcome-tagline){max-width:46ch;color:var(--brown);font-size:1rem}
+.home-page .welcome-copy .welcome-byline{font-style:italic;font-size:.8rem!important;margin:1rem 0 0}
+.home-page .btn{gap:.75rem}
+.home-page .welcome-illustration{overflow:hidden;min-width:0;position:relative;aspect-ratio:1.25}
+.home-page .welcome-illustration img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right}
+.home-page .woodland-paths{display:grid;padding:1rem var(--gutter);background:#e6e8d9;gap:0}
+.home-page .woodland-paths a{display:block;padding:1.2rem 0;text-decoration:none;border-bottom:1px solid #bbc1ac}
+.home-page .woodland-paths a:last-child{border:0}
+.home-page .woodland-paths .kicker{display:block;font-size:.6rem;margin:0 0 .45rem}
+.home-page .woodland-paths strong{display:block;font-size:1.25rem;line-height:1.3;font-weight:400;color:var(--deep)}
+.home-page .woodland-paths strong span{color:var(--gold);white-space:nowrap}
+.home-page .woodland-paths a>span:last-child{display:block;font-size:.85rem;color:var(--brown);margin-top:.5rem}
+.home-page .woodland-paths a:hover strong{text-decoration:underline;text-underline-offset:.2em}
+.home-page .home-book{display:grid;gap:2.5rem;padding:3.5rem var(--gutter);max-width:1260px;margin:auto;align-items:center}
+.home-page .home-book-cover{display:block;max-width:370px;width:85%;justify-self:center;box-shadow:0 15px 35px #30382725;transform:rotate(-2deg);border:5px solid #fffaf0}
+.home-page h2{font-size:clamp(2rem,3.2vw,3.1rem)}
+.home-page .book-name{font-style:italic;font-size:1.2rem;color:#53603a;line-height:1.5}
+.home-page .home-book-copy>p:not(.kicker){max-width:49ch}
+.home-page .home-world{display:grid;gap:2rem;padding:3rem var(--gutter);background:#eee9d9;align-items:center}
+.home-page .home-world-copy{max-width:520px}
+.home-page .home-map-link{display:block;text-decoration:none;min-width:0;background:var(--paper);border:1px solid var(--line);padding:.5rem}
+.home-page .home-map-link img{width:100%;height:auto}
+.home-page .home-map-link>span{display:block;padding:.65rem;font-size:.8rem;text-align:center}
+.home-page .home-map-link:hover>span{text-decoration:underline}
+.home-page .home-author{padding:3.5rem var(--gutter);text-align:center;max-width:830px;margin:auto}
+.home-page .home-flourish{display:block;font-size:2.5rem;color:var(--gold);margin-bottom:.5rem}
+.home-page .home-author>p:not(.kicker){font-size:1.15rem;font-style:italic}
+.home-page .home-author>a{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;font-size:.9rem}
+@media(min-width:650px){.home-page .woodland-paths{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;padding-block:1.5rem}.home-page .woodland-paths a{border:0;padding:.5rem 0}.home-page .woodland-paths strong{font-size:1.15rem}.home-page .woodland-welcome{grid-template-columns:1.05fr 1fr}.home-page .welcome-illustration{aspect-ratio:auto;min-height:490px}.home-page .welcome-copy{padding-block:3rem}.home-page h1{font-size:clamp(2.7rem,4.5vw,4.5rem)}.home-page .home-book{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);padding-block:4.5rem}.home-page .home-book-cover{width:95%}}
+@media(min-width:1000px){.home-page .welcome-copy{padding-left:max(var(--gutter),calc((100vw - 1280px)/2));padding-right:3rem}.home-page .welcome-illustration{min-height:540px}.home-page .woodland-paths{padding-inline:max(var(--gutter),calc((100vw - 1280px)/2));gap:3rem}.home-page .woodland-paths strong{font-size:1.4rem}.home-page .home-world{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:4rem;padding-block:4rem;padding-inline:max(var(--gutter),calc((100vw - 1280px)/2))}.home-page .home-book{gap:5rem}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -25,44 +64,33 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<main id="main">
-
-<section class="hero">
-  
-  <div class="hero-copy">
-    <p class="kicker">WELCOME TO BRAMBLEWOOD</p>
-    <h1>Stories that help little hearts grow.</h1>
-    <p class="intro">Step into a gentle woodland world where friendship, courage and kindness lead every adventure — and every small step can reveal something wonderful.</p>
-    <div class="buttons">
-      <a class="btn btn-primary" href="books.html">Explore the books</a>
-      <a class="btn btn-ghost" href="friends.html">Meet the friends</a>
-    </div>
+<main id="main" class="home-page">
+<section class="woodland-welcome" aria-labelledby="welcome-title">
+  <div class="welcome-copy">
+    <p class="kicker">THE BRAMBLEWOOD SERIES · BY BETHANY SIMON</p>
+    <h1 id="welcome-title">Welcome to<br><em>Bramblewood.</em></h1>
+    <p class="welcome-tagline">Stories that help little hearts grow.</p>
+    <p>A little woodland. A world of wonder. Come and meet Finn and his friends, where gentle adventures help little hearts discover courage, kindness and the magic of being themselves.</p>
+    <a class="btn btn-primary" href="explore.html">Step into Bramblewood <span aria-hidden="true">→</span></a>
+    <p class="welcome-byline">Woodland stories to share, treasure and return to.</p>
   </div>
-  <div class="hero-cover"><img src="finn-cover.png" width="1254" height="1254" decoding="async" fetchpriority="high" alt="Finn the Fox Who Was Afraid of the Dark cover"></div>
+  <div class="welcome-illustration"><img src="friends.png" width="1774" height="887" fetchpriority="high" decoding="async" alt="Finn and Olive beside a sparkling stream, surrounded by flowers, lantern light and a moonlit woodland."></div>
 </section>
-<section class="welcome-strip"><p>Look closely.</p><span>✦</span><p>Wonder kindly.</p><span>✦</span><p>Find your light.</p></section>
-<section class="section split">
-  <div>
-    <p class="kicker">BOOK ONE</p>
-    <h2>Finn the Fox Who Was Afraid of the Dark</h2>
-    <p>A gentle woodland story about friendship, courage and learning to see the dark a little differently.</p>
-    <a class="btn btn-primary" href="books.html">Discover Finn's story</a>
-  </div>
-  <a class="story-art" href="friends.html" aria-label="Meet Finn, Olive and their friends"><img src="friends.png" width="1774" height="887" decoding="async" loading="lazy" alt="Finn looks up at Olive beside the Silver Stream in the moonlit woodland"></a>
+<nav class="woodland-paths" aria-label="Discover Bramblewood">
+  <a href="books.html"><span class="kicker">A STORY TO SHARE</span><strong>Discover the books <span aria-hidden="true">↗</span></strong><span>Start an adventure with Finn.</span></a>
+  <a href="friends.html"><span class="kicker">FRIENDS TO TREASURE</span><strong>Meet the woodland friends <span aria-hidden="true">↗</span></strong><span>Say hello to Finn, Harry, Pip and Olive.</span></a>
+  <a href="explore.html"><span class="kicker">A WORLD TO EXPLORE</span><strong>Follow a woodland path <span aria-hidden="true">↗</span></strong><span>Find your way around Bramblewood.</span></a>
+</nav>
+<section class="home-book" aria-labelledby="finn-title">
+  <a class="home-book-cover" href="books.html"><img src="finn-cover.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Discover Finn the Fox Who Was Afraid of the Dark, by Bethany Simon."></a>
+  <div class="home-book-copy"><p class="kicker">OUR FIRST WOODLAND ADVENTURE</p><h2 id="finn-title">A little fox.<br>A brave little beginning.</h2><p class="book-name">Finn the Fox Who Was Afraid of the Dark</p><p>Finn loves Bramblewood. But when evening arrives, the woodland feels different. With his friends beside him, he begins to discover that the dark holds beautiful things too.</p><p>A gentle story about friendship, courage and learning to see the night a little differently.</p><a class="btn btn-primary" href="books.html">Discover Finn’s story <span aria-hidden="true">→</span></a></div>
 </section>
-<section class="section sage">
-  <div class="section-heading">
-    <p class="kicker">THE BRAMBLEWOOD SERIES</p>
-    <h2>Familiar friends. New adventures.</h2>
-    <p>Each book stands alone while gently building a woodland world children can return to again and again.</p>
-  </div>
-  <div class="home-cards">
-    <a class="home-card" href="books.html"><span class="chapter-number">01 / READ</span><h3>The Books</h3><p>Discover Finn and see what's coming next.</p></a>
-    <a class="home-card" href="friends.html"><span class="chapter-number">02 / MEET</span><h3>Meet the Friends</h3><p>Say hello to Finn, Harry, Pip and Olive.</p></a>
-    <a class="home-card" href="explore.html"><span class="chapter-number">03 / WANDER</span><h3>Explore Bramblewood</h3><p>Visit the places where the stories unfold.</p></a>
-  </div>
+<section class="home-world" aria-labelledby="world-title">
+  <div class="home-world-copy"><p class="kicker">BEYOND THE PAGES</p><h2 id="world-title">Every path leads<br>somewhere wonderful.</h2><p>From the Great Oak to the Silver Stream, there’s a whole woodland waiting to be discovered. Where will you wander first?</p><a class="btn btn-ghost" href="explore.html">Explore the Bramblewood map <span aria-hidden="true">→</span></a></div>
+  <a class="home-map-link" href="explore.html"><img src="bramblewood-map.png" width="1774" height="887" loading="lazy" decoding="async" alt="Preview of the illustrated Bramblewood map. Open the map to explore its places and read the labels."><span>Open the map and look a little closer <span aria-hidden="true">↗</span></span></a>
 </section>
-
+<section class="home-author"><span class="home-flourish" aria-hidden="true">❦</span><p class="kicker">THE HEART BEHIND THE STORIES</p><h2>Meet Bethany</h2><p>“Bramblewood began with a simple idea: to create gentle woodland stories that help children explore big feelings through kindness, curiosity and friendship.”</p><a href="about.html">A little more about Bethany <span aria-hidden="true">→</span></a></section>
+<div class="welcome-strip"><p>Look closely.</p><span>✦</span><p>Wonder kindly.</p><span>✦</span><p>Find your light.</p></div>
 </main>
 <footer>
   <div>
