@@ -22,4 +22,13 @@ Amazon purchase URL remains pending. The form retains its original FormSubmit de
 No live repository or website was changed by this work.
 
 ## Consolidated updates after the concise edition
-Includes the revised woodland welcome paragraph, smaller homepage image using woodland-adventure.png, the map invitation “Where shall we wander today?”, and portraits of Finn, Harry and Pip from friends-at-moss-bridge.png with Olive from friends.png. This complete package includes all dependencies; upload its extracted contents to the repository root. The concise Bethany biography is retained; restoration of the original biography was discussed but not requested.
+Includes the revised woodland welcome paragraph, smaller homepage image using woodland-adventure.png, the map invitation “Where shall we wander today?”, and portraits of Finn, Harry and Pip from friends-at-moss-bridge.png with Olive from friends.png. This complete package includes all dependencies; upload its extracted contents to the repository root. The original Bethany biography is restored, alongside the oak emblem and without the old photo placeholder or repeated values panels.
+
+## Google Analytics setup
+Measurement ID: G-TPLTMXRJF9. Optional Google Analytics starts only after Accept analytics. Decline blocks the Google tag. Cookie settings in each footer allows a later change; withdrawing consent removes local GA cookies and reloads to unload the tag. Choices expire after 180 days. Advertising signals are disabled. Local previews do not collect analytics.
+
+Upload the complete extracted package to the existing repository root and wait for GitHub Pages publishing. Open the live site, choose Accept analytics, visit another page, and check Analytics Realtime. Browser blockers can prevent collection. Live data receipt has not yet been verified.
+
+In Analytics, review Enhanced measurement and turn off Form interactions; basic page views are sufficient for this site. Keep Google signals and advertising features off. Review your property’s data-retention and sharing settings. The privacy page describes the implemented site features; the account-level settings and how long Bethany keeps correspondence should be confirmed by the owner.
+
+Automated isolated tests passed for no pre-consent tag, decline, acceptance without duplicate tags, remembered choice, settings reopening, withdrawal, GA cookie cleanup, local-host exclusion, storage failure and referrer query removal. These tests made no Google requests. Updated browser visual QA and live Realtime verification remain pending.

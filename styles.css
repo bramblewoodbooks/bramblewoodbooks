@@ -27,3 +27,13 @@
 .footer-right a{display:inline-flex;align-items:center;min-height:44px}
 .home-page .home-book{padding-block:3rem}
 @media(min-width:900px){.about-page{align-items:center}}
+
+/* Optional analytics choice: equal-weight controls, keyboard accessible. */
+.cookie-settings{background:transparent;color:inherit;border:0;text-decoration:underline;text-underline-offset:.22em;min-height:44px;padding:.4rem 0;font:inherit}
+.analytics-choice{position:fixed;z-index:100;bottom:1rem;left:1rem;right:1rem;max-width:540px;max-height:85vh;overflow:auto;padding:1.25rem;background:var(--paper);border:1px solid var(--line);border-radius:6px;box-shadow:0 8px 40px #25342138}
+.analytics-choice h2{font-size:1.4rem;margin-bottom:.6rem;letter-spacing:normal}
+.analytics-choice p{font: .85rem/1.65 system-ui,sans-serif;margin-bottom:1rem}
+.analytics-buttons{display:flex;flex-wrap:wrap;gap:.6rem}
+.analytics-buttons button{flex:1 1 150px;min-height:44px;padding:.7rem;border:1px solid var(--forest);background:var(--paper);color:var(--forest);border-radius:4px;font:600 .8rem/1.5 system-ui,sans-serif}
+.analytics-buttons button:hover{background:var(--sage)}
+.privacy-copy{max-width:850px;margin:auto}.privacy-copy h2{font-size:1.8rem;margin-top:2rem}.privacy-copy code{overflow-wrap:anywhere}

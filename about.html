@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#234c37">
-<link rel="stylesheet" href="styles.css?v=concise-1">
+<link rel="stylesheet" href="styles.css?v=analytics-1">
 <meta name="description" content="Meet Bethany Simon, creator of Bramblewood Books.">
 <title>Meet Bethany | Bramblewood Books</title>
 <link rel="canonical" href="https://bramblewoodbooks.com/about.html">
@@ -50,9 +50,17 @@
   </div>
   <div class="footer-right">
     <a href="contact.html">Contact Bethany</a>
+    <a href="privacy.html">Privacy &amp; cookies</a>
+    <button class="cookie-settings" type="button" data-analytics-settings hidden>Cookie settings</button>
     <span>© 2026 Bethany Simon</span>
   </div>
 </footer>
 <script src="script.js?v=concise-1"></script>
+<aside id="analytics-choice" class="analytics-choice" aria-labelledby="analytics-heading" hidden>
+<h2 id="analytics-heading">Optional visitor statistics</h2>
+<p>May we use Google Analytics cookies to understand visits and improve this website? Your choice won’t affect how the site works. <a href="privacy.html">Privacy &amp; cookies</a></p>
+<div class="analytics-buttons"><button type="button" data-analytics-choice="decline">Decline analytics</button><button type="button" data-analytics-choice="accept">Accept analytics</button></div>
+</aside>
+<script src="analytics.js?v=1" defer></script>
 </body>
 </html>
