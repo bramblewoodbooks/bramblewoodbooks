@@ -9,21 +9,23 @@
 <title>Contact | Bramblewood Books</title>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="index.html">
     <span class="brand-mark">❦</span>
     <span><strong>Bramblewood Books</strong><small>The Bramblewood Series</small></span>
   </a>
-  <nav class="nav" aria-label="Main navigation">
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+  <nav id="main-nav" class="nav" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="books.html">Books</a>
     <a href="friends.html">Meet the Friends</a>
     <a href="explore.html">Explore Bramblewood</a>
     <a href="about.html">Meet Bethany</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" aria-current="page">Contact</a>
   </nav>
 </header>
-<main>
+<main id="main">
 
 <section class="page-hero dark">
   <p class="kicker">CONTACT</p>
@@ -41,7 +43,7 @@
     <input type="hidden" name="_subject" value="New message from Bramblewood Books">
     <input type="hidden" name="_next" value="https://bramblewoodbooks.com/thanks.html">
     <input type="hidden" name="_captcha" value="true">
-    <input type="text" name="_honey" style="display:none">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-label="Leave this field empty">
 
     <label for="name">Name</label>
     <input id="name" name="name" type="text" autocomplete="name" required>
@@ -60,8 +62,8 @@
       <span>I'd love to hear about future Bramblewood books and special updates.</span>
     </label>
 
-    <button class="btn btn-primary form-button" type="submit">🌿 Send Message</button>
-    <p class="form-note">The newsletter tick box currently records interest with your message; a dedicated mailing-list service can be connected later.</p>
+    <button class="btn btn-primary form-button" type="submit">Send message →</button>
+    <p class="form-note">Ticking the box lets Bethany know you’re interested in updates; it does not automatically subscribe you to a mailing list. Your message is sent securely through FormSubmit.</p>
   </form>
 </section>
 

@@ -9,21 +9,23 @@
 <title>Explore Bramblewood | Bramblewood Books</title>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="index.html">
     <span class="brand-mark">❦</span>
     <span><strong>Bramblewood Books</strong><small>The Bramblewood Series</small></span>
   </a>
-  <nav class="nav" aria-label="Main navigation">
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+  <nav id="main-nav" class="nav" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="books.html">Books</a>
     <a href="friends.html">Meet the Friends</a>
-    <a href="explore.html">Explore Bramblewood</a>
+    <a href="explore.html" aria-current="page">Explore Bramblewood</a>
     <a href="about.html">Meet Bethany</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<main>
+<main id="main">
 
 <section class="page-hero">
   <p class="kicker">EXPLORE THE WOODLAND</p>
@@ -35,10 +37,14 @@
     <h2>A woodland full of familiar places</h2>
     <p>Follow the Silver Stream, visit the Great Oak, wander through the Wildflower Meadow and discover the Moonlit Clearing. As new stories arrive, the world of Bramblewood will grow too.</p>
     <div class="place-pills">
-      <span>The Great Oak</span><span>The Silver Stream</span><span>Hedgehog Hollow</span><span>Rabbit's Burrow</span><span>The Old Bridge</span><span>The Moonlit Clearing</span>
+      <span>Fox Hollow</span><span>The Great Oak</span><span>The Silver Stream</span><span>Hedgehog Hollow</span><span>Rabbit's Burrow</span><span>The Old Bridge</span><span>The Wildflower Meadow</span><span>The Whispering Pines</span><span>The Moonlit Clearing</span>
     </div>
   </div>
-  <figure class="map-frame"><img src="bramblewood-map.png" alt="Illustrated map of Bramblewood"><figcaption>An interactive map will arrive as Bramblewood grows.</figcaption></figure>
+  <figure class="map-frame">
+    <div class="map-toolbar" hidden><button type="button" data-zoom="out" aria-label="Zoom out">−</button><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" data-zoom="fit">Whole map</button><button type="button" data-zoom="detail">Read labels</button><output id="map-status" aria-live="polite"></output></div>
+    <div class="map-viewport" tabindex="0" role="region" aria-label="Bramblewood map. Scroll to explore" aria-describedby="map-help"><img src="bramblewood-map.png" width="1774" height="887" alt="Bramblewood map: the Great Oak in the northwest, Hedgehog Hollow northeast, Rabbit’s Burrow east, Fox Hollow southwest; the Silver Stream and Old Bridge run through the centre, with Wildflower Meadow, Whispering Pines and Moonlit Clearing to the south."></div>
+    <figcaption id="map-help">Swipe or scroll within the map to explore. Use + to look closer, or Whole map to see every path. <a href="bramblewood-map.png">Open full-size map</a></figcaption>
+  </figure>
 </section>
 
 </main>

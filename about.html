@@ -9,21 +9,23 @@
 <title>Meet Bethany | Bramblewood Books</title>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="index.html">
     <span class="brand-mark">❦</span>
     <span><strong>Bramblewood Books</strong><small>The Bramblewood Series</small></span>
   </a>
-  <nav class="nav" aria-label="Main navigation">
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+  <nav id="main-nav" class="nav" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="books.html">Books</a>
     <a href="friends.html">Meet the Friends</a>
     <a href="explore.html">Explore Bramblewood</a>
-    <a href="about.html">Meet Bethany</a>
+    <a href="about.html" aria-current="page">Meet Bethany</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<main>
+<main id="main">
 
 <section class="page-hero">
   <p class="kicker">MEET BETHANY</p>
@@ -39,16 +41,12 @@
     <p>I hope you'll join us on many more woodland adventures.</p>
     <p class="signoff"><strong>With love,<br>Bethany</strong></p>
   </div>
-  <aside class="photo-placeholder">
-    <span>🌿</span>
-    <h2>Author photo coming soon</h2>
-    <p>A little corner is waiting here for Bethany's Bramblewood author portrait.</p>
-  </aside>
+  <aside class="author-note"><p class="kicker">A NOTE FROM BETHANY</p><blockquote>“Courage doesn’t always roar — sometimes it begins with taking one small step into the unknown.”</blockquote><p>Gentle stories. Big feelings.<br>A little woodland wonder.</p><span class="botanical-mark" aria-hidden="true">❦</span></aside>
 </section>
 <section class="section sage">
   <div class="section-heading"><p class="kicker">THE HEART OF BRAMBLEWOOD</p><h2>Three little ideas at the centre of every story</h2></div>
   <div class="heart-grid">
-    <article><span>🦊</span><h3>Courage</h3><p>Bravery often begins with one small step.</p></article>
+    <article><span class="chapter-number">02 / MEET</span><h3>Courage</h3><p>Bravery often begins with one small step.</p></article>
     <article><span>❤️</span><h3>Kindness</h3><p>Compassion, friendship and empathy are strengths to treasure.</p></article>
     <article><span>🍃</span><h3>Wonder</h3><p>There is beauty to notice in the everyday world around us.</p></article>
   </div>

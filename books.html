@@ -9,21 +9,23 @@
 <title>Books | Bramblewood Books</title>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="index.html">
     <span class="brand-mark">❦</span>
     <span><strong>Bramblewood Books</strong><small>The Bramblewood Series</small></span>
   </a>
-  <nav class="nav" aria-label="Main navigation">
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+  <nav id="main-nav" class="nav" aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <a href="books.html">Books</a>
+    <a href="books.html" aria-current="page">Books</a>
     <a href="friends.html">Meet the Friends</a>
     <a href="explore.html">Explore Bramblewood</a>
     <a href="about.html">Meet Bethany</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<main>
+<main id="main">
 
 <section class="page-hero">
   <p class="kicker">THE BRAMBLEWOOD SERIES</p>
@@ -32,17 +34,17 @@
 </section>
 <section class="section">
   <article class="book-card feature-card">
-    <img src="finn-cover.png" alt="Finn the Fox Who Was Afraid of the Dark">
+    <img src="finn-cover.png" width="1254" height="1254" decoding="async" fetchpriority="high" alt="Finn the Fox Who Was Afraid of the Dark">
     <div class="book-copy">
       <span class="tag">BOOK ONE</span>
       <h2>Finn the Fox Who Was Afraid of the Dark</h2>
       <p>Finn loves Bramblewood, but when evening arrives, the woodland feels different. With Pip, Harry and Olive beside him, Finn begins to discover that the night does not make the woodland disappear — it simply helps different things appear.</p>
       <p class="book-sub">Written by Bethany Simon.</p>
-      <span class="btn btn-muted">Amazon link coming soon</span>
+      <p class="availability">Amazon purchase link coming soon.</p>
     </div>
   </article>
   <article class="book-card next-card">
-    <div class="hedgehog-placeholder">🦔</div>
+    <div class="next-number" aria-hidden="true">02</div>
     <div class="book-copy">
       <span class="tag">BOOK TWO · COMING SOON</span>
       <h2>Harry Hedgehog Learns to Be Brave</h2>

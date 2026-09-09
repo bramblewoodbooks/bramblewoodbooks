@@ -9,34 +9,37 @@
 <title>Meet the Friends | Bramblewood Books</title>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="index.html">
     <span class="brand-mark">❦</span>
     <span><strong>Bramblewood Books</strong><small>The Bramblewood Series</small></span>
   </a>
-  <nav class="nav" aria-label="Main navigation">
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+  <nav id="main-nav" class="nav" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="books.html">Books</a>
-    <a href="friends.html">Meet the Friends</a>
+    <a href="friends.html" aria-current="page">Meet the Friends</a>
     <a href="explore.html">Explore Bramblewood</a>
     <a href="about.html">Meet Bethany</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<main>
+<main id="main">
 
 <section class="page-hero dark">
   <p class="kicker">MEET THE FRIENDS</p>
   <h1>Everyone brings something different to Bramblewood.</h1>
 </section>
 <section class="section">
+  <figure class="wide-art"><img src="friends.png" width="1774" height="887" decoding="async" loading="lazy" alt="An illustrated spread from Finn’s story: Olive listens kindly to Finn beside the Silver Stream"><figcaption>A moment with Finn and Olive, from Book One. <a href="friends.png">Open the full spread</a></figcaption></figure>
   <div class="friend-grid">
     <article class="friend-card light-card"><div class="friend-icon">🦊</div><h2>Finn</h2><p>Curious, thoughtful and learning that courage can begin with one small step.</p></article>
     <article class="friend-card light-card"><div class="friend-icon">🦔</div><h2>Harry</h2><p>Loyal, gentle and much braver than he sometimes believes himself to be.</p></article>
     <article class="friend-card light-card"><div class="friend-icon">🐇</div><h2>Pip</h2><p>Bright, energetic and always ready to turn the next bend in the path.</p></article>
     <article class="friend-card light-card"><div class="friend-icon">🦉</div><h2>Olive</h2><p>Wise and kind, with a quiet way of helping her friends notice what matters.</p></article>
   </div>
-  <figure class="wide-art"><img src="friends.png" alt="Finn, Harry and Pip in Bramblewood"></figure>
+
 </section>
 
 </main>

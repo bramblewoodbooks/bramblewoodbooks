@@ -9,13 +9,15 @@
 <title>Bramblewood Books | Stories that help little hearts grow</title>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <a class="brand" href="index.html">
+  <a class="brand" href="index.html" aria-current="page">
     <span class="brand-mark">❦</span>
     <span><strong>Bramblewood Books</strong><small>The Bramblewood Series</small></span>
   </a>
-  <nav class="nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+  <nav id="main-nav" class="nav" aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a>
     <a href="books.html">Books</a>
     <a href="friends.html">Meet the Friends</a>
     <a href="explore.html">Explore Bramblewood</a>
@@ -23,10 +25,10 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<main>
+<main id="main">
 
 <section class="hero">
-  <div class="leaf leaf-one">🍂</div><div class="leaf leaf-two">🍃</div>
+  
   <div class="hero-copy">
     <p class="kicker">WELCOME TO BRAMBLEWOOD</p>
     <h1>Stories that help little hearts grow.</h1>
@@ -36,7 +38,7 @@
       <a class="btn btn-ghost" href="friends.html">Meet the friends</a>
     </div>
   </div>
-  <div class="hero-cover"><img src="finn-cover.png" alt="Finn the Fox Who Was Afraid of the Dark cover"></div>
+  <div class="hero-cover"><img src="finn-cover.png" width="1254" height="1254" decoding="async" fetchpriority="high" alt="Finn the Fox Who Was Afraid of the Dark cover"></div>
 </section>
 <section class="welcome-strip"><p>Look closely.</p><span>✦</span><p>Wonder kindly.</p><span>✦</span><p>Find your light.</p></section>
 <section class="section split">
@@ -46,7 +48,7 @@
     <p>A gentle woodland story about friendship, courage and learning to see the dark a little differently.</p>
     <a class="btn btn-primary" href="books.html">Discover Finn's story</a>
   </div>
-  <img class="rounded art-shadow" src="friends.png" alt="Finn, Harry and Pip together in Bramblewood">
+  <a class="story-art" href="friends.html" aria-label="Meet Finn, Olive and their friends"><img src="friends.png" width="1774" height="887" decoding="async" loading="lazy" alt="Finn looks up at Olive beside the Silver Stream in the moonlit woodland"></a>
 </section>
 <section class="section sage">
   <div class="section-heading">
@@ -55,9 +57,9 @@
     <p>Each book stands alone while gently building a woodland world children can return to again and again.</p>
   </div>
   <div class="home-cards">
-    <a class="home-card" href="books.html"><span>📚</span><h3>The Books</h3><p>Discover Finn and see what's coming next.</p></a>
-    <a class="home-card" href="friends.html"><span>🦊</span><h3>Meet the Friends</h3><p>Say hello to Finn, Harry, Pip and Olive.</p></a>
-    <a class="home-card" href="explore.html"><span>🌳</span><h3>Explore Bramblewood</h3><p>Visit the places where the stories unfold.</p></a>
+    <a class="home-card" href="books.html"><span class="chapter-number">01 / READ</span><h3>The Books</h3><p>Discover Finn and see what's coming next.</p></a>
+    <a class="home-card" href="friends.html"><span class="chapter-number">02 / MEET</span><h3>Meet the Friends</h3><p>Say hello to Finn, Harry, Pip and Olive.</p></a>
+    <a class="home-card" href="explore.html"><span class="chapter-number">03 / WANDER</span><h3>Explore Bramblewood</h3><p>Visit the places where the stories unfold.</p></a>
   </div>
 </section>
 
